@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Modeseven;
+    src: url(../font/modeseven-font/Modeseven-L3n5.ttf);
+}
+
+#content {
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+    font-size: 1.5rem;
+    color: rgb(145, 151, 174)
+}
+
+#table-container 
+{
+	margin: 2rem 2rem 2rem 2rem;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+.col {
+	padding: 1rem 1rem 1em 1em;
+}
+.col-presentation, .col-text {
+	font-family: Modeseven;
+}
+
+.table-icon {
+	width: 5rem;
+	height: auto;
+}
+
+table {
+	padding: 5rem;
+	margin: 5rem;
+	background-color:#D0D3DC;
+	border-radius: 1rem;
+	color: #1A1D23;
+	text-align: justify;
+}

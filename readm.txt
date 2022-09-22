@@ -1,0 +1,22 @@
+Fonctionnalité:
+    - un scroll smooth
+    - un bouton sur la navbar pour changer le thème du site
+    - glisser la souris sur le titre rouge de la page d'acceuil et admiré la magie
+
+Abrorescence:
+
+    assets: 
+    Contient tous les fichiers hormis les htmls qui sont à la racines du site
+
+    assets/css: 
+    Contient tous les fichiers css, ils ont le même nom que la page html avec qui ils sont associé
+    N.B: global.css est inclu partout, il contient le css global du site
+
+    assets/js:
+    contient l'unique fichier js du projet permmettant le changement du thème de couleur
+
+    assets/font:
+    contient les polices du site
+
+    assets/img:
+    contient toutes les images

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Modeseven;
+    src: url(../font/modeseven-font/Modeseven-L3n5.ttf);
+}
+
+p {
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 2rem;
+    color: rgb(145, 151, 174);
+    font-family: Modeseven;
+    text-align: center;
+}

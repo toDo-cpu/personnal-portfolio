@@ -1,0 +1,159 @@
+/* Animations */
+
+@keyframes title-color-change {
+    0%  { color: #DA3E52;}
+    20% { color: #BC96E6;}
+    40% { color: #FABC2A;}
+    60% { color: #2F243A;}
+    80% { color: #4D7EA8;}
+    100% { color: #DA3E52;}
+}
+
+/* Font declarations */
+
+@font-face {
+    font-family: Modeseven;
+    src: url(../font/modeseven-font/Modeseven-L3n5.ttf);
+}
+@font-face {
+    font-family: AllisDaedric;
+    src: url(../font/AllisDaedric/AllisDaedric.otf);
+}
+
+/* Header section */
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container {
+    width: 25%;
+    object-fit: contain;
+}
+
+#title-img {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+}
+#title-text {
+    font-size: 4rem;
+    font-family: AllisDaedric, sans-serif;
+    color: #DA3E52;
+}
+#title-text:hover {
+    animation-name: title-color-change;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    font-family: Modeseven, sans-serif;
+}
+#subtitle-text {
+    font-size: 1.5rem;
+    color: rgb(175, 227, 192);
+}
+
+/* weeb Paragraph */
+.text {
+    text-align: justify;
+    font-family: Modeseven, sans-serif;
+    font-size: 1.75rem;
+    color: rgb(145, 151, 174);
+}
+#discord-tag {
+    font-family: Modeseven, sans-serif;
+    color: rgb(175, 227, 192);
+}
+
+#weeb-paragraphe {
+    display: flex;
+    flex-direction: row;
+}
+#anime-img {
+    align-self: center;
+    width: auto;
+    height: 10rem;
+    padding: 2rem;
+}
+
+
+/* Footer, social medias links */
+
+#social-media-list img {
+    height: 75px;
+    width: auto;
+}
+
+#social-media-list {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#social-media-list>* {
+    flex: 1 1 0%;
+}
+
+#network-link img {
+    object-fit: contain;
+    height: auto;
+}
+
+.container {
+    margin: 3rem;
+    padding: 2rem;
+}
+
+
+/* Media queries to make the website responsive */
+
+@media only screen and (max-width: 640px) {
+    .text {
+        text-align: justify;
+        font-family: Modeseven, sans-serif;
+        font-size: 1.25rem;
+        color: rgb(145, 151, 174)
+    }
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+    #title-text {
+        font-size: 2rem;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .container {
+        margin: 2rem;
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #weeb-paragraphe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #anime-img {
+        align-self: center;
+        padding: 2rem;
+    }
+}

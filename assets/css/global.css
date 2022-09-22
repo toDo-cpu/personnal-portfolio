@@ -1,0 +1,133 @@
+/* Animate the navbar */
+
+@keyframes change-header-color {
+    0%  { background-color: #171C27;}
+    50% { background-color: #2F243A;}
+    100% { background-color: #171C27;}
+}
+
+/* Global values for the website theme */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    background-color: rgb(39, 48, 67);
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+#header {
+    background-color: #171C27;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+	margin: 0 0 0 0;
+    display: flex;
+    text-align: center;
+    animation-name: change-header-color;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+#header>* {
+    flex: 1;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: columns;
+    align-items: center;
+}
+
+.nav-list>* {
+    flex: 1;
+}
+
+.link-button {
+	font-family: 'Roboto Mono', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+}
+
+.nav-button {
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #EE964B;
+    border: 0;
+    cursor: pointer;
+    padding: 0.5rem 1.225rem;
+    border-radius: 20px;
+}
+
+.nav-button:hover {
+    background-color: #DDAE7E;
+} 
+
+.link-button:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media queries to make the site responsive */
+
+@media only screen and (max-width: 640px) {
+    #header {
+        justify-content: space-between;
+    }
+    #header>* {
+        flex: inherit;
+        justify-self: center;
+    }
+	 .nav-button {
+		font-family: 'Roboto Mono', sans-serif;
+		background-color: #EE964B;
+		border: 0;
+		cursor: pointer;
+		margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+		padding: 0.5rem 1.225rem;
+		border-radius: 5px;
+		font-size: 0.85rem;
+	} 
+    .nav-list {
+        column-gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+  #header {
+	display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+	.nav-button {
+		display: none;
+	} 
+}
+
+
